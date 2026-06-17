@@ -1,0 +1,32 @@
+{
+  "languages": {
+    "C": {
+      "formatter": {
+        "external": {
+          "command": "zed-42header",
+          "arguments": ["--stdin-filepath", "{buffer_path}", "--language", "C"]
+        }
+      },
+      "format_on_save": "on"
+    },
+    "C++": {
+      "formatter": {
+        "external": {
+          "command": "zed-42header",
+          "arguments": ["--stdin-filepath", "{buffer_path}", "--language", "C++"]
+        }
+      },
+      "format_on_save": "on"
+    },
+    "Python": {
+      "formatter": {
+        "external": {
+          "command": "zed-42header",
+          "arguments": ["--stdin-filepath", "{buffer_path}", "--language", "Python"]
+        }
+      },
+      "format_on_save": "on"
+    }
+  }
+}
+

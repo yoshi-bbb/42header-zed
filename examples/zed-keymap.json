@@ -1,0 +1,10 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-alt-h": "editor::Format",
+      "ctrl-alt-h": "editor::Format"
+    }
+  }
+]
+

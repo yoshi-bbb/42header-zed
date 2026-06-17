@@ -1,0 +1,11 @@
+[
+  {
+    "label": "42header: insert/update current file",
+    "command": "zed-42header",
+    "args": ["--write", "--stdin-filepath", "$ZED_FILE"],
+    "save": "current",
+    "reveal": "never",
+    "hide": "on_success"
+  }
+]
+

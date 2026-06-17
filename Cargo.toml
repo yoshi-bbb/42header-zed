@@ -1,0 +1,15 @@
+[package]
+name = "zed-42header"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.74"
+description = "42 header formatter for Zed"
+license = "MIT"
+repository = "https://github.com/42tokyo-etc/42header-zed"
+homepage = "https://github.com/42tokyo-etc/42header-zed"
+readme = "README.md"
+keywords = ["zed", "42", "header", "formatter"]
+categories = ["command-line-utilities", "development-tools"]
+
+[dependencies]
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
