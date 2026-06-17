@@ -331,8 +331,8 @@ mod tests {
             path: Some(Path::new(path)),
             language: None,
             style: None,
-            username: "kube",
-            email: "hello@kube.io",
+            username: "tester",
+            email: "tester@student.42.fr",
             now,
             mode: Mode::Upsert,
         }
@@ -352,10 +352,10 @@ mod tests {
             "/*   vscode-42header.c                                  :+:      :+:    :+:   */\n"
         ));
         assert!(output.contains(
-            "/*   By: kube <hello@kube.io>                       +#+  +:+       +#+        */\n"
+            "/*   By: tester <tester@student.42.fr>              +#+  +:+       +#+        */\n"
         ));
         assert!(output.contains(
-            "/*   Created: 2013/11/18 13:37:42 by kube              #+#    #+#             */\n"
+            "/*   Created: 2013/11/18 13:37:42 by tester            #+#    #+#             */\n"
         ));
         assert!(output.ends_with("\nint main(void) {}\n"));
     }
@@ -372,10 +372,10 @@ mod tests {
             "/*   new.c                                              :+:      :+:    :+:   */\n"
         ));
         assert!(second.contains(
-            "/*   Created: 2013/11/18 13:37:42 by kube              #+#    #+#             */\n"
+            "/*   Created: 2013/11/18 13:37:42 by tester            #+#    #+#             */\n"
         ));
         assert!(second.contains(
-            "/*   Updated: 2016/09/18 13:11:04 by kube             ###   ########.fr       */\n"
+            "/*   Updated: 2016/09/18 13:11:04 by tester           ###   ########.fr       */\n"
         ));
         assert_eq!(second.matches("Created:").count(), 1);
     }

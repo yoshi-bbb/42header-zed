@@ -16,14 +16,14 @@ git init
 git add .
 git commit -m "Initial release"
 git branch -M main
-git remote add origin https://github.com/42tokyo-etc/42header-zed.git
+git remote add origin https://github.com/yoshi-bbb/42header-zed.git
 git push -u origin main
 ```
 
 After publishing, users can install with:
 
 ```sh
-cargo install --git https://github.com/42tokyo-etc/42header-zed
+cargo install --git https://github.com/yoshi-bbb/42header-zed
 ```
 
 ## crates.io
@@ -60,4 +60,3 @@ If this project later grows a real Zed extension wrapper:
 4. Add the repository as a public HTTPS submodule under `extensions/`.
 5. Add an entry to `extensions.toml`.
 6. Run `pnpm sort-extensions` in the Zed extensions repository.
-
